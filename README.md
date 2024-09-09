@@ -54,3 +54,56 @@ plt.show()
 - SAS and Tableau are useful but niche tools, ranking much lower in job postings, suggesting these may be more specialized or supplementary skills rather than core competencies for data science.
 
 In summary, the chart highlights that mastering Python and SQL is crucial for data scientists, while familiarity with R, SAS, and Tableau can provide added value depending on the specific role or industry.
+
+
+## 3. How well do jobs and skills pay for Data Scientists?
+
+### Salary Analysis for Data Nerds
+
+#### Visualize Data
+
+```python
+sms.boxplot(data=df_US_top6, x='salary_year_avg', y='job_title_short', order=job_order)
+
+ticks_x = plt.FuncFormatter(lambda x, _: f'${int(x/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+
+```
+
+#### Result
+![Salary Distributions of Data Jobs in the US](images/salary_analysis_result.png)
+*Box plot visualizing the salary distributions for the top 6 data jobs titles.*
+
+#### Insight:
+- Data Science and Engineering roles are highly compensated in both mid-level and senior positions, with notable outliers among the highest earners. These roles are typically more technical and require specialized skills.
+- Data Analyst roles have much lower salaries and less variation, which is expected as these positions often serve as entry points into data careers.
+- Seniority directly correlates with higher pay and wider variability, as demonstrated by the large range in the senior roles’ salaries. Senior-level professionals in data tend to have higher and more varied compensation, reflecting experience, leadership roles, and specialized knowledge.
+- Top-paying roles are in data science and engineering, particularly at senior levels, which is consistent with the demand for expertise in these fields.
+
+### Highest Paid & Most Demanded Skills for Data Scientists
+
+#### Visualize Data
+
+```python
+
+fig, ax = plt.subplots(2, 1)
+
+sns.barplot(data=df_DS_top_pay, x='median', y=df_DS_top_pay.index, hue='median', ax=ax[0], palette='dark:g_r')
+
+sns.barplot(data=df_DS_skills, x='median', y=df_DS_skills.index, hue='median', ax=ax[1], palette='dark:g_r')
+
+plt.show()
+
+```
+
+#### Results
+![Highest Paid & In-Demand Skills for Data Scientists](images/salary_analysis_result_2.png)
+*Bar chart visualizing the salary distributions for the top & in-demand skills for data scientists*
+
+#### Insight:
+- Divergence in Skills: While some of the highest-paid skills (like Watson, Unreal Engine) may be highly specialized or uncommon in typical data science roles, the most in-demand skills focus on foundational technologies such as Python, SQL, and cloud computing.
+- Career Strategy: To maximize earning potential, specializing in niche, cutting-edge technologies (AI platforms, software development frameworks) may be key. On the other hand, building a strong base in the core, highly in-demand skills (like Python, SQL, TensorFlow) will make you more marketable.
+- Broader Skillsets for High Pay: Many of the top-paid skills are not directly tied to machine learning or statistics but extend into software development, cloud architecture, and collaborative tools. This suggests that high-paying roles may look for a broader skillset beyond traditional data science.
+
+If you’re targeting a high-paying data science role, focusing on niche but high-impact skills could be a valuable strategy, while building a solid foundation in core tools will ensure you remain competitive in the broader job market.​
