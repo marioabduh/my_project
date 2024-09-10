@@ -107,3 +107,28 @@ plt.show()
 - Broader Skillsets for High Pay: Many of the top-paid skills are not directly tied to machine learning or statistics but extend into software development, cloud architecture, and collaborative tools. This suggests that high-paying roles may look for a broader skillset beyond traditional data science.
 
 If you’re targeting a high-paying data science role, focusing on niche but high-impact skills could be a valuable strategy, while building a solid foundation in core tools will ensure you remain competitive in the broader job market.​
+
+
+## 4. What is the most optimal skill to learn for Data Scientists?
+#### Visualize Data
+
+```python
+from adjustText import adjust_text
+import matplotlib.pyplot as plt
+
+plt.scatter(df_DS_skills_high_demand['skill_percent'], df_DS_skills_high_demand['median_salary'])
+plt.show()
+
+```
+
+#### Results
+![Most Optimal Skills for Data Scientists in the US](images/optimal_skills_result.png)
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data scientists in the US*
+
+#### Insight:
+- The scatter plot shows that most of the `programming` skills (colored blue), such us Python and SQL are highly sought after, reflecting their importance in data manipulation and analysis. 
+- Cloud Skills (colored green) like AWS and Azure are also in demand, indicating the growing need for cloud computing expertise in data science roles.
+- Specialized Tools Libraries (colored red) -- TensorFlow and Spark -- command higher salaries, suggesting that expertise in these areas is particularly valuable.
+
+
+Skills like Python and SQL, which are in high demand, offer competitive salaries. However, specialized skills like TensorFlow, despite lower demand, can lead to higher compensation. The demand for data science professionals continues to grow, with companies willing to pay top dollar for expertise in key areas
