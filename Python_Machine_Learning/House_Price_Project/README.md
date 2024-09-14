@@ -113,7 +113,7 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Heatmap of Features')
 plt.show()
 ```
-![Correlation Heatmap of Features](Python_Machine_Learning/House_Price_Project/images/correlation_heatmap_result.png)
+![Correlation Heatmap of Features](img/correlation_heatmap_result.png)
 *A heatmap showing correlation between each columns*
 
 #### Residual Plot
@@ -126,8 +126,8 @@ plt.ylabel('Residuals')
 plt.title('Residual Plot')
 plt.show()
 ```
-![Residual Plot](Python_Machine_Learning/House_Price_Project/images/residual_plot_result.png)
-*Use residual plot to see how well the model predictions align with the actual values (showing prediction errors) *
+![Random Forest](img/residual_plot_result.png)
+*Use residual plot to see how well the model predictions align with the actual values (showing prediction errors)*
 
 ## Conclusion
 The Random Forest Regressor performed the best with an MAE of 0.157 and R² of 0.834. The most important features for predicting house prices were:
