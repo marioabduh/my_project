@@ -113,7 +113,7 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Heatmap of Features')
 plt.show()
 ```
-
+![Correlation Heatmap of Features](Python_Machine_Learning/House_Price_Project/images/correlation_heatmap_result.png)
 *A heatmap showing correlation between each columns*
 
 #### Residual Plot
@@ -126,7 +126,7 @@ plt.ylabel('Residuals')
 plt.title('Residual Plot')
 plt.show()
 ```
-
+![Residual Plot](Python_Machine_Learning/House_Price_Project/images/residual_plot_result.png)
 *Use residual plot to see how well the model predictions align with the actual values (showing prediction errors) *
 
 ## Conclusion
